@@ -40,8 +40,8 @@ services:
       RAILS_SERVE_STATIC_FILES: "true"
       RAILS_HOST: backend.aalsaigh.com
       RAILS_PROTOCOL: https
-      RAILS_ASSUME_SSL: "false"
-      RAILS_FORCE_SSL: "false"
+      RAILS_ASSUME_SSL: "true"
+      RAILS_FORCE_SSL: "true"
       PORT: "9003"
       SECRET_KEY_BASE: 4d69d803ba66234ffd67980c16dc3d62ff57dee4ce071db973b38e3925c380c6658719927e77fc8abffb871b04d53ec603df0d57c104c4949944f9267f9151c9
     volumes:
