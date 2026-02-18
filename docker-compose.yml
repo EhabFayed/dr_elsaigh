@@ -5,7 +5,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: dr_saleeg_development
+      POSTGRES_DB: dr_saleh_development
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -36,7 +36,7 @@ services:
       redis:
         condition: service_healthy
     environment:
-      DATABASE_URL: postgres://postgres:password@db:5432/dr_saleeg_development
+      DATABASE_URL: postgres://postgres:password@db:5432/dr_saleh_development
       REDIS_URL: redis://redis:6379/0
     volumes:
       - .:/app
@@ -54,7 +54,7 @@ services:
       redis:
         condition: service_healthy
     environment:
-      DATABASE_URL: postgres://postgres:password@db:5432/dr_saleeg_development
+      DATABASE_URL: postgres://postgres:password@db:5432/dr_saleh_development
       REDIS_URL: redis://redis:6379/0
     volumes:
       - storage:/app/storage
