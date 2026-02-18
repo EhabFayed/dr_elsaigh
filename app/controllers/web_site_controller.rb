@@ -100,7 +100,7 @@ skip_before_action :authorize_request
 
       render json: data
     else
-      render json: { error: 'Operation not found' }, status: :not_found
+      render json: { error: 'Operation not found' }, status: 301
     end
   end
   def blog_show
@@ -152,7 +152,7 @@ skip_before_action :authorize_request
 
       render json: data
     else
-      render json: { error: 'Blog not found' }, status: :not_found
+      render json: { error: 'Blog not found' }, status: 301
     end
   end
 
