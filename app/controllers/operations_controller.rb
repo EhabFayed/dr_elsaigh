@@ -60,13 +60,11 @@ class OperationsController < ApplicationController
           id: content.id,
           content_ar: content.content_ar,
           content_en: content.content_en,
-          user_id: content.user_id,
-          is_deleted: content.is_deleted,
           is_published: content.is_published,
           photos: content.content_photos.map do |photo|
             {
               id: photo.id,
-              photo_url: photo.attached? ? url_for(photo) : nil
+              photo_url: photo.photo.attached? ? url_for(photo.photo) : nil
             }
           end
         }
